@@ -1,82 +1,41 @@
-/* roboto-100 - latin_cyrillic */
-@font-face {
-    font-family: 'RobotoLighter';
-    font-style: normal;
-    font-weight: 100;
-    src: url('fonts/roboto-v20-latin_cyrillic-100.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Thin'), local('Roboto-Thin'),
-         url('fonts/roboto-v20-latin_cyrillic-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-100.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-100.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-100.svg#Roboto') format('svg'); /* Legacy iOS */
-  }
-  /* roboto-300 - latin_cyrillic */
-  @font-face {
-    font-family: 'RobotoLight';
-    font-style: normal;
-    font-weight: 300;
-    src: url('fonts/roboto-v20-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Light'), local('Roboto-Light'),
-         url('fonts/roboto-v20-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-300.svg#Roboto') format('svg'); /* Legacy iOS */
-  }
-  /* roboto-regular - latin_cyrillic */
-  @font-face {
-    font-family: 'RobotoNormal';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-    src: local('Roboto'), local('Roboto-Regular'),
-         url('fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
-  }
-  /* roboto-500 - latin_cyrillic */
   @font-face {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    src: url('fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Medium'), local('Roboto-Medium'),
-         url('fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg');
   }
-  /* roboto-700 - latin_cyrillic */
+
   @font-face {
-    font-family: 'RobotoBold';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot');
     src: local('Roboto Bold'), local('Roboto-Bold'),
-         url('fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
+         url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'),
+         url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'),
+         url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg');
   }
-  /* roboto-900 - latin_cyrillic */
+
   @font-face {
-    font-family: 'RobotoBolder';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    src: url('fonts/roboto-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v20-latin_cyrillic-900.eot');
     src: local('Roboto Black'), local('Roboto-Black'),
-         url('fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
-         url('fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'),
+         url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'),
+         url('../fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'),
+         url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg');
   }
-  
   
   * {
       box-sizing: border-box;
@@ -87,6 +46,7 @@
   html,
   body {
       font-family: Roboto;
+      font-weight: 400;
       font-size: 16px;
       position: relative;
   }
@@ -187,7 +147,7 @@
 
     .bio {
         background-color: #fbfbfb;
-        background: url('IMG/bg+Человек+фигура.jpg') bottom no-repeat;
+        background: url('../IMG/bg_men_1.jpg') bottom no-repeat;
         height: 690px;
         position: relative;
     }
@@ -410,12 +370,12 @@
       
     .slick-arrow.slick-prev{
         left: -25px;
-        background-image: url('IMG/left-arrow.png');
+        background-image: url('../IMG/left-arrow.png');
     }
     
     .slick-arrow.slick-next{
         right: -25px;
-        background-image: url('IMG/right-arrow.png');
+        background-image: url('../IMG/right-arrow.png');
     }
 
     .slick-dots{ 
@@ -462,7 +422,7 @@
     }
     
     .price {
-        background: url('IMG/bg.jpg') no-repeat center center;
+        background: url('../IMG/bg.jpg') no-repeat center center;
         position: relative;
     }
 
@@ -600,21 +560,21 @@
     }
 
     .lists__sprait_1 {
-        background: url('IMG/sprait.png') no-repeat left center;
+        background: url('../IMG/sprait.png') no-repeat left center;
     }
 
     .lists__sprait_2 {
-        background: url('IMG/sprait.png') left center no-repeat;
+        background: url('../IMG/sprait.png') left center no-repeat;
         background-position-x: -50px;
     }
 
     .lists__sprait_3 {
-        background: url('IMG/sprait.png') left center no-repeat;
+        background: url('../IMG/sprait.png') left center no-repeat;
         background-position-x: -100px;
     }
 
     .lists__sprait_4 {
-        background: url('IMG/sprait.png') center right no-repeat;
+        background: url('../IMG/sprait.png') center right no-repeat;
     }
 
     .lists__sprait a {
@@ -747,7 +707,7 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: url('IMG/Слой\ 1.png');
+        background: url('../IMG/sloi1.png');
         display: none;
         z-index: 10;
     }
@@ -859,7 +819,7 @@
         top: 0;
         z-index: 10;
         display: none;
-        background: url('IMG/Слой\ 1.png');
+        background: url('../IMG/sloi1.png');
     }
     
     .info {
@@ -925,7 +885,7 @@
         width: 100%;
         height: 100%;
         top: 0px;
-        background: url('IMG/Слой\ 1.png');
+        background: url('../IMG/sloi1.png');
         z-index: 10;
         display: none;
     }
@@ -1025,7 +985,7 @@
         width: 100%;
         height: 100%;
         top: 0px;
-        background: url('IMG/Слой\ 1.png');
+        background: url('../IMG/sloi1.png');
         z-index: 10;
         display: none;
     }
@@ -1187,7 +1147,7 @@
     }
 
     .bio {
-        background: url('IMG/bg+Человек+фигура.png') no-repeat;
+        background: url('../IMG/bg_men_1.png') no-repeat;
         background-position: center right;
         background-position-y: -100px;
     }
