@@ -2,39 +2,27 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot');
     src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg');
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
   }
 
   @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot');
     src: local('Roboto Bold'), local('Roboto-Bold'),
-         url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), 
          url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
-         url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'),
-         url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'),
-         url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg');
+         url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
   }
 
   @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/roboto-v20-latin_cyrillic-900.eot');
     src: local('Roboto Black'), local('Roboto-Black'),
-         url('../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
          url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'),
-         url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'),
-         url('../fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'),
-         url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg');
+         url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff');
   }
   
   * {
@@ -106,24 +94,48 @@
 
     .menu {
         display: flex;
-        width: 300px;
         justify-content: space-between;
     }
 
+    .menu__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
     .menu__link {
-        transition: all 150ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        display: inline-block;
+        line-height: 2;
+        position:relative;
+    }
+
+    .menu__link:after {
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #fc557c; 
+        content: "";
+        transition: width 0.3s ease-out;
+        transform:translateX(-50%);
+    }
+
+    .menu__link:hover:after,
+    .menu__link:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        color: #fc557c;
     }
 
     .menu__link:hover {
         color: #fc557c;
-        border-bottom: 1px solid #fc557c;
     }
+
 
     .header__link {
         margin-right: 28px;
         font-size: 25px;
         font-weight: bold;
-        transition: all 150ms ease-in-out;
+        transition: all 300ms ease-in-out;
     }
 
     .header__link:hover {
@@ -147,7 +159,7 @@
 
     .bio {
         background-color: #fbfbfb;
-        background: url('../IMG/bg_men_1.jpg') bottom no-repeat;
+        background: url('../img/bg_men_1.jpg') bottom no-repeat;
         height: 690px;
         position: relative;
     }
@@ -370,12 +382,12 @@
       
     .slick-arrow.slick-prev{
         left: -25px;
-        background-image: url('../IMG/left-arrow.png');
+        background-image: url('../img/left-arrow.png');
     }
     
     .slick-arrow.slick-next{
         right: -25px;
-        background-image: url('../IMG/right-arrow.png');
+        background-image: url('../img/right-arrow.png');
     }
 
     .slick-dots{ 
@@ -422,7 +434,7 @@
     }
     
     .price {
-        background: url('../IMG/bg.jpg') no-repeat center center;
+        background: url('../img/bg.jpg') no-repeat center center;
         position: relative;
     }
 
@@ -560,21 +572,21 @@
     }
 
     .lists__sprait_1 {
-        background: url('../IMG/sprait.png') no-repeat left center;
+        background: url('../img/sprait.png') no-repeat left center;
     }
 
     .lists__sprait_2 {
-        background: url('../IMG/sprait.png') left center no-repeat;
+        background: url('../img/sprait.png') left center no-repeat;
         background-position-x: -50px;
     }
 
     .lists__sprait_3 {
-        background: url('../IMG/sprait.png') left center no-repeat;
+        background: url('../img/sprait.png') left center no-repeat;
         background-position-x: -100px;
     }
 
     .lists__sprait_4 {
-        background: url('../IMG/sprait.png') center right no-repeat;
+        background: url('../img/sprait.png') center right no-repeat;
     }
 
     .lists__sprait a {
@@ -707,9 +719,10 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: url('../IMG/sloi1.png');
-        display: none;
+        top: 0px;
+        background: url('../img/sloi1.png');
         z-index: 10;
+        display: none;
     }
     
     .call {
@@ -819,7 +832,7 @@
         top: 0;
         z-index: 10;
         display: none;
-        background: url('../IMG/sloi1.png');
+        background: url('../img/sloi1.png');
     }
     
     .info {
@@ -885,7 +898,7 @@
         width: 100%;
         height: 100%;
         top: 0px;
-        background: url('../IMG/sloi1.png');
+        background: url('../img/sloi1.png');
         z-index: 10;
         display: none;
     }
@@ -985,7 +998,7 @@
         width: 100%;
         height: 100%;
         top: 0px;
-        background: url('../IMG/sloi1.png');
+        background: url('../img/sloi1.png');
         z-index: 10;
         display: none;
     }
@@ -1147,7 +1160,7 @@
     }
 
     .bio {
-        background: url('../IMG/bg_men_1.png') no-repeat;
+        background: url('../img/bg_men_1.png') no-repeat;
         background-position: center right;
         background-position-y: -100px;
     }
